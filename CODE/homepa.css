@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  background-color:#0f7682
+  }
+ul {
+list-style-type: none;
+position: fixed;
+top: 0;
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #2d3030;
+box-shadow: 2px 2px 2px #03767a;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: #2d3030;
+text-align: center;
+padding: 12px 13px;
+text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: #000000;
+box-shadow: 3px 3px 3px #03767a;
+display: block;
+transform: perspective(2px) translateZ(0);
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: box-shadow;
+transition-property: box-shadow;
+}
+
+.active {
+  background-color: #000000;
+}
+
+
+#sidebar {
+  list-style-type: none;
+  margin-top: 72px;
+  padding: 0;
+  width: 10%;
+  background-color: #2d3030;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+}
+
+#add {
+text-align: center;
+/*border-left: 2px solid #296870;
+border-top: 1.5px solid #296870;
+border-right: 2px solid #296870;*/
+border-bottom: 2px solid #30d6d6;
+}
+#fonter {
+  font-family: Comfortaa,'Trebuchet MS', sans-serif;
+  font-size: 110%;
+  text-align: center;
+}
+
+input[type=button], input[type=text], input[type=password] {
+  background-color: #037682;/*#025861;#03717d;*/
+  border: 1.5px solid #30d6d6;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 0px;
+  width: 250px;
+  height: 30px;
+}
+
+input[type=submit]{
+  background-color: #037682;
+  border: 1.5px solid #30d6d6;
+  color: white;
+  /*padding: 25px 32px 10px 10px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  margin: 4px 2px 4px 2px;
+  cursor: pointer;
+  font-family: Comfortaa;
+  font-size: 110%;
+  letter-spacing: 0.5px;
+  border-radius: 0px;
+  width: 100px;
+  height: 40px;
+}

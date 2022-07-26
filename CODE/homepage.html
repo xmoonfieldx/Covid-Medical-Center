@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>COVID Medical Center</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="homepages.css">
+  <script type = "text/javascript" src = "pswd_chk.js"></script>
+</head>
+<body>
+  <!--Navigation bar -->
+    <ul>
+      <li><img src="shorts_logo.png" alt="logo" style="width:30%;" /></li>
+      <li><a href="#news"><pre>Sign In     </pre></a></li>
+      <li><a href="#news"><pre>Complaint   </pre></a></li>
+      <li><a href="#news"><pre>Contact     </pre></a></li>
+    <!--<li style="float:right"><a class="active" href="#about">About</a></li>-->
+    </ul>
+
+  <!-- Sidebar -->
+    <ul id="sidebar">
+      <pre>
+      <li id="add" class="active"><a href="#news">New Patient      <br /></a></li>
+      <li id="add"><a href="#news">Record           <br /></a></li>
+      <li id="add"><a href="#news">Pharmacy         <br /></a></li>
+      <li id="add"><a href="#news">Book a room      <br /></a></li>
+      <li id="add"><a href="#news">Professionals    <br /></a></li>
+      <li id="add"><a href="#news">Transfer papers  <br /></a></li>
+      <li id="add"><a href="#news">Discharge Papers <br /></a></li>
+     </pre>
+    </ul>
+
+  <h2>Yo, RJ<br /><br /><br /><br /></h2>
+  <p style="margin-left:200px;">Hello</p>
+    <?php
+      $conn = mysqli_connect("localhost", "root", "", "COVID_MEDICAL_CENTER");
+      $sql = "SELECT COUNT(*) FROM PATIENT";
+      $id = mysqli_query($conn, $sql);
+      printf("PATIENT ID $id");
+    ?>
+</body>
+</html>
